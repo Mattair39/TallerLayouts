@@ -1,0 +1,62 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerLayouts.FlexLayout"
+             Title="Flex Layout">
+    <ScrollView>
+        <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly"
+                >
+            <FlexLayout Direction="Row"
+                    AlignItems="Center"
+                    JustifyContent="Center"
+                    >
+                <Image Source="johnny_knoxville.jpg"
+                    HeightRequest="120"
+                    WidthRequest="120"
+                    Aspect="AspectFit">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoToAbsoluteLayoutButton" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Joaquín Chacón"
+                   VerticalOptions="Center"
+                   FontSize="Large" />
+            </FlexLayout>
+
+            <FlexLayout Direction="Row"
+                    AlignItems="Center"
+                    JustifyContent="Center"
+                    >
+                <Image Source="ryan_dunn.jpg"
+                    HeightRequest="120"  
+                    WidthRequest="120"   
+                    Aspect="AspectFit">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoToAbsoluteLayoutButton" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Mathew Baquero"
+                   VerticalOptions="Center"
+                   FontSize="Large" />
+            </FlexLayout>
+            
+            <FlexLayout Direction="Row"
+                    AlignItems="Center"
+                    JustifyContent="Center"
+        >
+                <Image Source="steve_o.jpg"
+                    HeightRequest="120"  
+                    WidthRequest="120"   
+                    Aspect="AspectFit">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoToAbsoluteLayoutButton" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Mateo Herrera"
+                    VerticalOptions="Center"
+                    FontSize="Large" />
+            </FlexLayout>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

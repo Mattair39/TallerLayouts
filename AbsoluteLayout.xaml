@@ -1,0 +1,39 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerLayouts.AbsoluteLayout"
+             Title="Absolute Layout">
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 0.9" 
+                    AbsoluteLayout.LayoutFlags="All"
+                    VerticalScrollBarVisibility="Always">
+            <VerticalStackLayout Spacing="20" HorizontalOptions="FillAndExpand">
+                <Label Text="iPad Pro (2024)" 
+                       FontAttributes="Bold" 
+                       FontSize="Large" 
+                       HorizontalOptions="Center" />
+                <Image Source="ipad_pro.jpg" 
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"/>
+                <Label Text="Diseño:" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="El iPad Pro 2024 se destaca por su diseño ultradelgado, logrando una reducción notable en grosor y peso en comparación con sus predecesores. A pesar de su delgadez, Apple asegura que el dispositivo es más resistente que nunca gracias a nuevos materiales y técnicas de construcción. Este diseño más ligero y compacto facilita su transporte y uso en diferentes entornos." HorizontalTextAlignment="Center" />
+
+                <Label Text="Rendimiento:" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="En el corazón del iPad Pro 2024 se encuentra el nuevo chip Apple M4, construido con tecnología de 3 nanómetros de segunda generación. Este potente procesador promete un rendimiento de CPU hasta 1,5 veces más rápido que el M2, además de mejoras significativas en el procesamiento gráfico y en tareas de inteligencia artificial. Esto se traduce en una experiencia fluida y rápida en todo tipo de aplicaciones, desde edición de video y diseño gráfico hasta juegos de alta exigencia." HorizontalTextAlignment="Center"/>
+
+                <Label Text="Pantalla:" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="La pantalla OLED del iPad Pro 2024 es otro de sus puntos fuertes. Ofrece colores vibrantes, negros profundos y un contraste excepcional, superando la calidad de las pantallas LCD de modelos anteriores. Además, la tecnología OLED permite un diseño más delgado y eficiente en el consumo de energía." HorizontalTextAlignment="Center"/>
+
+                <Label Text="Software y funcionalidades:" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="El iPad Pro 2024 llega con iPadOS 17, que introduce nuevas funciones y mejoras en la multitarea, la productividad y la creatividad. Además, Apple ha lanzado versiones optimizadas de Final Cut Pro y Logic Pro para iPad, permitiendo a los profesionales de la edición de video y audio aprovechar al máximo la potencia del dispositivo." HorizontalTextAlignment="Center"/>
+
+                <Label Text="Conclusión:" FontAttributes="Bold" HorizontalOptions="Center" />
+                <Label Text="El iPad Pro 2024 representa un salto importante en la evolución de las tablets, ofreciendo un diseño más delgado y resistente, un rendimiento excepcional gracias al chip M4 y una pantalla OLED de alta calidad. Con la llegada de aplicaciones profesionales como Final Cut Pro y Logic Pro, el iPad Pro se consolida como una herramienta poderosa para creativos y profesionales de diversos ámbitos. Sin embargo, su precio elevado y la necesidad de adquirir accesorios adicionales para aprovechar todo su potencial podrían ser factores a considerar para algunos usuarios." HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Button Text="Ir a GridLayout"
+                AbsoluteLayout.LayoutBounds="0.99, 0.99, AutoSize, AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Clicked="GoToGridLayoutButton" />
+    </AbsoluteLayout>
+</ContentPage>
